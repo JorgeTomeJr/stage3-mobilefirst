@@ -1,0 +1,171 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Palanquin', sans-serif;
+    font-family: 'Staatliches', cursive;
+}
+:root{
+    font-size: 62.5%;
+    /*fontes*/
+    --font-Palanquin: 'Palanquin', sans-serif;
+    --font-Staatliches: 'Staatliches', cursive;
+
+    /*cores*/
+    --bg-body: hsl(0, 0%, 90%);
+    --bg-header: hsl(218, 17%, 62%);
+    --bg-h2-header: hsl(275, 18%, 79%);
+    --bg-h3-card: hsl(312, 91%, 96%);
+
+    /*cores fontes*/
+    --fc-h2: hsl(0, 0%, 100%);
+    --fc-text: hsl(274, 84%, 12%);
+    --fc-h3-card: hsl(232, 17%, 35%);
+}
+img{
+    width: 100%;
+}
+body{
+    background-color: var(--bg-body);
+}
+
+header{
+    background-color: var(--bg-header);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.logo{
+    margin: 32px 0;
+    width: 137px;
+    height: 137px;
+}
+.title{
+    width: 100%;
+    background-color: var(--bg-h2-header);
+    text-align: center;
+    padding: 8px;
+}
+.title h1{
+    font-family: var(--font-Staatliches);
+    font-style: normal;
+    font-size: 4rem;
+    line-height: 3.4rem;
+
+    letter-spacing: 0.5rem;
+
+    color: #FFFFFF;
+
+    text-shadow: 0px 2px 2px rgba(0, 0, 0, 0.25);
+}
+.text p{
+    font-family: var(--font-Palanquin);
+    font-style: normal;
+    font-size: 2rem;
+    line-height: 1.5rem;
+    text-align: center;
+
+    padding: 1.4rem 1rem 0;
+    color: var(--fc-text);
+    margin: 0 auto;
+}
+
+
+
+.cards{
+    display: grid;
+    gap: 3.2rem;
+
+    padding: 6.3rem 3.2rem 6rem;
+}
+.card{
+    position: relative;
+}
+.card h3{
+    font-family: var(--font-Staatliches);
+    background-color: var(--bg-h3-card);
+    color: var(--fc-h3-card);
+
+    font-weight: 400;
+    font-size: 2rem;
+    line-height: 3.4rem;
+
+    letter-spacing: 0.5rem;
+    border-radius: 2rem;
+    padding: 0.5rem 2.4rem;
+
+    width: fit-content;
+    position: absolute;
+    top: 1.6rem;
+    right: 1.6rem;
+
+}
+.card img{
+    border-radius: 2rem;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+@keyframes topdown{
+    0%{
+        opacity: 0;
+        transform: translateY(-15px);
+    }
+    100%{
+        opacity: 1;
+        transform: translateY(0px);
+    }
+}
+
+@keyframes downtop{
+    0%{
+        opacity: 0;
+        transform: translateY(15px);
+    }
+    100%{
+        opacity: 1;
+        transform: translateY(0px);
+    }
+}
+
+
